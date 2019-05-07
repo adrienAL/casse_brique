@@ -34,16 +34,18 @@ public class MonCasseBrique extends JPanel
 	//constructeur
 	public MonCasseBrique() 
 	{
-		for(int i = 0 ; i<NUM_BRIQUE_LIGNE ; i++)
-		{
-			for(int j = 0 ; j < NUM_BRIQUE_COLONNES ; j++)
-			{
-				Random a = new Random();
-				Random b = new Random();
-				Random c = new Random();
-				this.briques.add(new Brique(i, j, new Color(a.nextInt(250), b.nextInt(250), c.nextInt(250))));
-			} 
-		}
+		FormeBrique F = new FormeBrique();
+		this.briques = F.Losange();		
+//		for(int i = 0 ; i<NUM_BRIQUE_LIGNE ; i++)
+//		{
+//			for(int j = 0 ; j < NUM_BRIQUE_COLONNES ; j++)
+//			{
+//				Random a = new Random();
+//				Random b = new Random();
+//				Random c = new Random();
+//				this.briques.add(new Brique(i, j, new Color(a.nextInt(250), b.nextInt(250), c.nextInt(250))));
+//			} 
+//		}
 		// ????
 		timer = new Timer(10, new ActionListener()
 				{
