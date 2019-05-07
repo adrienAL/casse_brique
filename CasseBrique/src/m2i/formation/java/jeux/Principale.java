@@ -8,10 +8,6 @@ public class Principale {
 	{
 		MaFrame frame =new MaFrame();
 		frame.setVisible(true);
-		
-		
-		Brique brique = new Brique(0, 1, Color.black);
-		System.out.println(brique);
 	
 	}
 
