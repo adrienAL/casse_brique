@@ -35,7 +35,8 @@ public class MonCasseBrique extends JPanel
 	public MonCasseBrique() 
 	{
 		FormeBrique F = new FormeBrique();
-		this.briques = F.Losange();		
+//		this.briques = F.Losange();	
+		this.briques = F.Coeur();	
 //		for(int i = 0 ; i<NUM_BRIQUE_LIGNE ; i++)
 //		{
 //			for(int j = 0 ; j < NUM_BRIQUE_COLONNES ; j++)
